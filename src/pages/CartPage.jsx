@@ -13,7 +13,7 @@ function  CartPage() {
 	};
 
 	if (items.length === 0) {
-		return <p className="text-center text-lg">Your cart is empty!</p>;
+		return <p className="mx-auto flex min-h-full items-center justify-center text-center text-2xl">Your cart is empty!</p>;
 	}
 
 	return (
