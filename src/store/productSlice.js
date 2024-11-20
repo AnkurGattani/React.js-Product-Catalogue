@@ -24,15 +24,15 @@ const productSlice = createSlice({
 			} else { // if the category is not selected, add it
 				state.selectedCategories.push(category);
 			}
-			state.filteredProducts = state.products.filter((product) => 
-				(state.selectedCategories.length === 0 || state.selectedCategories.includes(product.category)) 
-				&& 
-				(state.searchQuery === "" || product.name.toLowerCase().includes(state.searchQuery.toLowerCase())) 
+			state.filteredProducts = state.products.filter((product) =>
+				(state.selectedCategories.length === 0 || state.selectedCategories.includes(product.category))
+				&&
+				(state.searchQuery === "" || product.name.toLowerCase().includes(state.searchQuery.toLowerCase()))
 			);	// filter the products based on selected categories and search query
 		},
 		searchByName: (state, action) => {
 			state.searchQuery = action.payload;
-			state.filteredProducts = state.products.filter((product) => 
+			state.filteredProducts = state.products.filter((product) =>
 				(state.selectedCategories.length === 0 || state.selectedCategories.includes(product.category)) && (product.name.toLowerCase().includes(action.payload.toLowerCase()))
 			); // filter the products based on search query
 		}
