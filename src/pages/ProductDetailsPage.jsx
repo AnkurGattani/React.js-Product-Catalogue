@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../store/cartSlice";
 
 const ProductDetails = () => {
   const { id } = useParams(); // Get the product ID from the route
@@ -12,6 +13,11 @@ const ProductDetails = () => {
   if (!product) {
     return <p className="text-center text-lg text-gray-500">Product not found.</p>;
   }
+
+  const dispatch = useDispatch();
+  const handleAddToCart = () => { 
+    dispatch(addToCart(product));
+  };
 
   return (
     <div className="container mx-auto px-4 py-10">
@@ -46,7 +52,9 @@ const ProductDetails = () => {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 shadow">
+            <button 
+            className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 shadow"
+            onClick={handleAddToCart}>
               Add to Cart
             </button>
           </div>

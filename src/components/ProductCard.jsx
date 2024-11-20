@@ -1,9 +1,25 @@
 import React from 'react'
-// import storageService from '../../services/storage'
 import { Link } from 'react-router-dom'
-// import Button from './Button';
+import { useDispatch } from 'react-redux'
+import { addToCart } from "../store/cartSlice";
 
 function ProductCard({ id, name, image, price, category }) {
+
+  const dispatch = useDispatch();
+
+  const product = {
+    id,
+    name,
+    image,
+    price,
+    category,
+    quantity: 1,
+  }
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(product));
+  };
+
 	return (
 
 
@@ -40,7 +56,7 @@ function ProductCard({ id, name, image, price, category }) {
             View Details
           </Link>
           <button
-            onClick={() => console.log("Added to cart")}
+            onClick={handleAddToCart}
             className="flex-1 px-4 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-medium rounded-lg hover:from-emerald-600 hover:to-teal-600 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-all duration-300"
           >
             Add to Cart
