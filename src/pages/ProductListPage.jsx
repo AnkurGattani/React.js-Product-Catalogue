@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setProducts, filterByCategory, searchByName } from '../store/productSlice.js'
 import ProductCard from '../components/ProductCard.jsx'
+import productsData from '../products.json'
 
 function ProductListPage() {
 
@@ -13,9 +14,11 @@ function ProductListPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch('https://run.mocky.io/v3/31be3c3c-5c50-4cd8-9d88-651e4aa8005d')
+    fetch('https://run.mocky.io/v3/fc3d6e02-7776-4c4a-b359-38586557bc04')
       .then((response) => response.json())
-      .then((data) => dispatch(setProducts(data)));
+      .then((data) => dispatch(setProducts(data))); // for data from API
+    // dispatch(setProducts(productsData)); // for static data
+
   }, [dispatch]);
 
   const handleCategoryChange = (category) => {
