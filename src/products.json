@@ -5,7 +5,7 @@
 		"price": 699.99,
 		"description": "A high-end smartphone with a stunning display that brings visuals to life. Featuring a powerful processor for seamless multitasking, it is perfect for gaming, photography, and productivity. Equipped with a long-lasting battery to keep you connected all day. The sleek design and premium build ensure it fits comfortably in your hand. Experience cutting-edge technology at your fingertips.",
 		"category": "Electronics",
-		"image": "https://via.placeholder.com/150"
+		"image": "/smartphone-x.jpeg"
 	},
 	{
 		"id": 2,
@@ -13,7 +13,7 @@
 		"price": 1199.99,
 		"description": "A powerful laptop designed for gaming enthusiasts and professionals. Boasting a high-performance GPU and ample RAM, it delivers smooth and immersive gaming experiences. Its fast refresh rate display ensures every frame is crisp and vibrant. Ideal for both work and play, it also excels in multitasking and running demanding applications. Stay cool with advanced thermal management, even during intense gaming sessions.",
 		"category": "Electronics",
-		"image": "https://via.placeholder.com/150"
+		"image": "/gamiing-laptop.jpg"
 	},
 	{
 		"id": 3,
@@ -21,7 +21,7 @@
 		"price": 49.99,
 		"description": "Compact and portable, this Bluetooth speaker offers exceptional sound quality with deep bass. Its durable design makes it perfect for indoor and outdoor use. Enjoy up to 12 hours of uninterrupted music with its long-lasting battery. Pair it easily with any Bluetooth-enabled device for seamless connectivity. The perfect companion for parties, workouts, or relaxing at home.",
 		"category": "Electronics",
-		"image": "https://via.placeholder.com/150"
+		"image": "/bluetooth-speaker.jpg"
 	},
 	{
 		"id": 4,
@@ -29,7 +29,7 @@
 		"price": 129.99,
 		"description": "A lightweight e-reader with a glare-free screen, ideal for book lovers. Store thousands of e-books and enjoy reading anywhere, anytime. Adjustable brightness ensures comfortable reading in any lighting condition. With weeks of battery life, it's perfect for travel. Discover the joy of reading with customizable fonts and text sizes tailored to your preference.",
 		"category": "Electronics",
-		"image": "https://via.placeholder.com/150"
+		"image": "/e-reader.webp"
 	},
 	{
 		"id": 5,
@@ -37,7 +37,7 @@
 		"price": 14.99,
 		"description": "Embark on a thrilling adventure through the cosmos with this science fiction masterpiece. Packed with intriguing characters and gripping storylines, it will keep you hooked till the last page. Explore futuristic worlds, groundbreaking technologies, and thought-provoking themes. Perfect for fans of interstellar exploration and time travel. A must-have addition to any sci-fi enthusiast's library.",
 		"category": "Books",
-		"image": "https://via.placeholder.com/150"
+		"image": "/science-fiction-book.jpg"
 	},
 	{
 		"id": 6,
@@ -45,7 +45,7 @@
 		"price": 24.99,
 		"description": "Discover a treasure trove of recipes perfect for every occasion. From quick weekday meals to elaborate feasts, this cookbook has it all. Each recipe is detailed with step-by-step instructions and stunning photographs. Learn tips and tricks to elevate your culinary skills. Ideal for home cooks and seasoned chefs alike, it’s your go-to guide for delicious creations.",
 		"category": "Books",
-		"image": "https://via.placeholder.com/150"
+		"image": "/cook-book.jpg"
 	},
 	{
 		"id": 7,
@@ -53,7 +53,7 @@
 		"price": 9.99,
 		"description": "A delightful storybook filled with colorful illustrations and engaging tales for children. Each story delivers valuable lessons in kindness, courage, and imagination. Perfect for bedtime reading or independent exploration by young readers. The sturdy binding ensures it withstands repeated reads. A wonderful gift that inspires a love of reading in children.",
 		"category": "Books",
-		"image": "https://via.placeholder.com/150"
+		"image": "/childrens-storybook.webp"
 	},
 	{
 		"id": 8,
@@ -61,7 +61,7 @@
 		"price": 19.99,
 		"description": "Dive into a suspenseful mystery novel that will keep you on the edge of your seat. With twists and turns at every corner, unravel the secrets alongside a brilliant detective. The vividly written characters and detailed settings bring the story to life. Ideal for fans of crime dramas and psychological thrillers. A captivating read that lingers long after the final page.",
 		"category": "Books",
-		"image": "https://via.placeholder.com/150"
+		"image": "/mystery-novel.jpg"
 	},
 	{
 		"id": 9,
@@ -69,7 +69,7 @@
 		"price": 19.99,
 		"description": "Crafted for comfort and style, this men’s t-shirt is a wardrobe essential. Made from breathable fabric, it keeps you cool and comfortable all day. Its versatile design pairs effortlessly with jeans, shorts, or joggers. Available in a range of colors to suit your style. A durable and long-lasting choice for casual outings or lounging at home.",
 		"category": "Clothing",
-		"image": "https://via.placeholder.com/150"
+		"image": "/mens-tshirt.webp"
 	},
 	{
 		"id": 10,
@@ -77,7 +77,7 @@
 		"price": 39.99,
 		"description": "Turn heads with this chic and elegant dress for women. Made from soft, premium fabric, it ensures comfort while exuding sophistication. The flattering fit enhances your silhouette, making it perfect for special occasions or casual outings. Available in a variety of patterns and colors to match your personal style. A versatile piece that belongs in every wardrobe.",
 		"category": "Clothing",
-		"image": "https://via.placeholder.com/150"
+		"image": "/womens-dress.avif"
 	},
 	{
 		"id": 11,
@@ -85,7 +85,7 @@
 		"price": 29.99,
 		"description": "Stay cozy and stylish with this versatile hoodie. Designed for both warmth and breathability, it’s perfect for layering during colder months. The adjustable drawstring hood and spacious pockets add practicality to its classic look. Whether you're hitting the gym or relaxing at home, this hoodie has you covered. Available in various colors to suit your vibe.",
 		"category": "Clothing",
-		"image": "https://via.placeholder.com/150"
+		"image": "/hoodie.avif"
 	},
 	{
 		"id": 12,
@@ -93,7 +93,7 @@
 		"price": 49.99,
 		"description": "These durable and fashionable denim jeans are a timeless addition to your wardrobe. The perfect blend of comfort and style, they are ideal for everyday wear. Designed to fit and flatter all body types, they pair well with any top or footwear. Whether you’re heading to work or hanging out, these jeans are a reliable choice.",
 		"category": "Clothing",
-		"image": "https://via.placeholder.com/150"
+		"image": "/jeans.jpg"
 	},
 	{
 		"id": 13,
@@ -101,7 +101,7 @@
 		"price": 59.99,
 		"description": "A versatile blender that makes meal prep quick and easy. Perfect for smoothies, soups, and sauces, it comes with multiple speed settings for precise blending. The sturdy construction ensures durability, while the detachable components make cleaning a breeze. Whether you're a home cook or health enthusiast, this blender will be your go-to kitchen companion.",
 		"category": "Home Appliances",
-		"image": "https://via.placeholder.com/150"
+		"image": "/blender.jpg"
 	},
 	{
 		"id": 14,
@@ -109,7 +109,7 @@
 		"price": 99.99,
 		"description": "Simplify your cooking with this compact microwave oven. Equipped with multiple pre-set modes, it is perfect for reheating, defrosting, and cooking. The sleek design fits any kitchen space, and its intuitive controls make it easy to use. Durable and energy-efficient, this microwave is a must-have for modern homes.",
 		"category": "Home Appliances",
-		"image": "https://via.placeholder.com/150"
+		"image": "/microwave-oven.avif"
 	},
 	{
 		"id": 15,
@@ -117,7 +117,7 @@
 		"price": 149.99,
 		"description": "Keep your home spotless with this high-efficiency vacuum cleaner. Designed for all surfaces, it provides powerful suction to tackle dirt and debris effortlessly. The lightweight build and ergonomic handle make cleaning less of a chore. With a HEPA filter for allergen control, it ensures a healthier living environment for your family.",
 		"category": "Home Appliances",
-		"image": "https://via.placeholder.com/150"
+		"image": "/vaccum-cleaner.webp"
 	},
 	{
 		"id": 16,
@@ -125,7 +125,7 @@
 		"price": 79.99,
 		"description": "Brew fresh coffee every morning with this easy-to-use coffee maker. Featuring customizable brew settings, you can enjoy your coffee just the way you like it. The compact design fits neatly into any kitchen space. With a quick brewing cycle and easy cleaning, it’s the perfect appliance for coffee enthusiasts.",
 		"category": "Home Appliances",
-		"image": "https://via.placeholder.com/150"
+		"image": "/coffee-maker.webp"
 	},
 	{
 		"id": 17,
@@ -133,6 +133,6 @@
 		"price": 24.99,
 		"description": "A must-have for collectors and kids alike, this action figure boasts intricate details and moveable joints. Ideal for imaginative play or display, it brings your favorite characters to life. Built to last, it withstands hours of playtime. Whether for gifting or collecting, this action figure is a fan favorite.",
 		"category": "Toys",
-		"image": "https://via.placeholder.com/150"
+		"image": "/action-figure.jpg"
 	}
 ]
