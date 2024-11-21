@@ -80,3 +80,22 @@ This will start the development server, and you can open the application by navi
 **Problem:** Combining search and filters dynamically was challenging.
 
 **Solution:** Updated filtered products using useSelector and Redux actions.
+
+## Screenshots
+Product Listings
+![image](https://github.com/user-attachments/assets/765707a9-7084-49e8-995b-30cee7e852d5) 
+
+Selecting one or more categories
+![image](https://github.com/user-attachments/assets/753ab580-5290-4787-8645-08b76d65bd2c)
+
+Search products across categories
+![image](https://github.com/user-attachments/assets/b20e0b8d-618b-413d-b853-ae59b404ba95)
+
+Product Details page
+![image](https://github.com/user-attachments/assets/30d93ba7-3bf1-4d9c-82af-e9f401d9b95a)
+
+Cart Page
+![image](https://github.com/user-attachments/assets/eed7680c-5ab3-414e-b34c-dabaac92691b)
+
+
+
