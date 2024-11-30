@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { addToCart } from "../store/cartSlice";
 
 function ProductCard({ id, name, image, price, category, description,  onViewDetails }) {
+
+  const { items } = useSelector((state) => state.cart);
+
+  const isProductInCart = items.some((item) => item.id === id);
 
   const dispatch = useDispatch();
 
@@ -52,16 +56,25 @@ function ProductCard({ id, name, image, price, category, description,  onViewDet
         <div className="flex gap-3">
           <button
             onClick={() => onViewDetails(product)}
-            className="flex-1 px-4 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 text-center"
+            className="flex-1 px-4 py-2.5 bg-blue-500 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 text-center"
           >
             View Details
           </button>
-          <button
-            onClick={handleAddToCart}
-            className="flex-1 px-4 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-medium rounded-lg hover:from-emerald-600 hover:to-teal-600 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-all duration-300"
-          >
-            Add to Cart
-          </button>
+          {isProductInCart ? (
+            <Link
+              to="/cart"
+              className="flex-1 px-4 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 text-center"
+            >
+              Added to Cart
+            </Link>
+          ) : (
+            <button
+              onClick={handleAddToCart}
+              className="flex-1 px-4 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-medium rounded-lg hover:from-emerald-600 hover:to-teal-600 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-all duration-300"
+            >
+              Add to Cart
+            </button>
+          )}
         </div>
       </div>
     </div>

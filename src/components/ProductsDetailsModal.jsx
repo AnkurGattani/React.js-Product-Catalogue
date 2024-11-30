@@ -1,8 +1,14 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../store/cartSlice";
+import {  Link } from "react-router-dom";
 
 function ProductsDetailsModal({ product, onClose }) {
+
+	const { items } = useSelector((state) => state.cart);
+
+	const isProductInCart = items.some((item) => item.id === product.id);
+
 	const dispatch = useDispatch();
 
 	const handleAddToCart = () => {
@@ -46,12 +52,20 @@ function ProductsDetailsModal({ product, onClose }) {
 							</p>
 
 							<div className="flex gap-4">
+								{isProductInCart ? (
+									<Link
+										to="/cart"
+										className="flex-1 px-4 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 text-center"
+									>
+										Added to Cart
+									</Link>
+								) : (
 								<button
-									className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 shadow"
+											className="flex-1 px-4 py-2.5 bg-blue-500 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 text-center shadow"
 									onClick={handleAddToCart}
 								>
 									Add to Cart
-								</button>
+								</button>)}
 							</div>
 						</div>
 					</div>
