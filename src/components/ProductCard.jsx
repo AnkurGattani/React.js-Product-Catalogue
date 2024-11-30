@@ -28,7 +28,7 @@ function ProductCard({ id, name, image, price, category, description,  onViewDet
 	return (
 
 
-	<div className="bg-white border border-gray-200 rounded-xl relative  shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 z-0">
+	<div className="bg-white border border-gray-200 rounded-xl relative  shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 grid grid-cols-2 sm:grid-cols-1 z-0">
       	<div className="relative m-3 rounded-xl group">
 			<img 
 				src={image} 
