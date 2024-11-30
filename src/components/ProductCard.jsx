@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addToCart } from "../store/cartSlice";
 
-function ProductCard({ id, name, image, price, category }) {
+function ProductCard({ id, name, image, price, category, description,  onViewDetails }) {
 
   const dispatch = useDispatch();
 
@@ -13,6 +13,7 @@ function ProductCard({ id, name, image, price, category }) {
     image,
     price,
     category,
+    description,
     quantity: 1,
   }
 
@@ -30,9 +31,9 @@ function ProductCard({ id, name, image, price, category }) {
 				alt={name} 
 				className="w-full h-48 object-contain object-center transition-transform duration-300 group-hover:scale-105" 
 			/>
-        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+        {/* <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
         
-		</div>
+		</div> */}
       </div>
 
       <div className="p-5">
@@ -49,12 +50,12 @@ function ProductCard({ id, name, image, price, category }) {
         </div>
 
         <div className="flex gap-3">
-          <Link
-            to={`/product/${id}`}
+          <button
+            onClick={() => onViewDetails(product)}
             className="flex-1 px-4 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 text-center"
           >
             View Details
-          </Link>
+          </button>
           <button
             onClick={handleAddToCart}
             className="flex-1 px-4 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-medium rounded-lg hover:from-emerald-600 hover:to-teal-600 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-all duration-300"

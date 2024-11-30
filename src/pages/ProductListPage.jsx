@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setProducts, filterByCategory, searchByName } from '../store/productSlice.js'
 import ProductCard from '../components/ProductCard.jsx'
 import productsData from '../products.json'
+import ProductsDetailsModal from '../components/ProductsDetailsModal.jsx'
 
 function ProductListPage() {
 
@@ -12,6 +13,10 @@ function ProductListPage() {
   const selectedCategories = useSelector((state) => state.products.selectedCategories);
 
   const [searchQuery, setSearchQuery] = useState("");
+
+  // for modal view
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     fetch('https://run.mocky.io/v3/fc3d6e02-7776-4c4a-b359-38586557bc04')
@@ -29,6 +34,16 @@ function ProductListPage() {
     const query = e.target.value;
     setSearchQuery(query);
     dispatch(searchByName(searchQuery));
+  }
+
+  const handleViewDetails = (product) => {
+    setSelectedProduct(product);
+    setOpenModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setSelectedProduct(null);
+    setOpenModal(false);
   }
 
   return (
@@ -78,6 +93,8 @@ function ProductListPage() {
                 image={product.image}
                 price={product.price}
                 category={product.category}
+                description={product.description}
+                onViewDetails={handleViewDetails}
               />
             ))
           ) : (
@@ -86,6 +103,14 @@ function ProductListPage() {
         }
 
       </div>
+
+      {/* Product Details Modal */}
+      {openModal && (
+        <ProductsDetailsModal
+          product={selectedProduct}
+          onClose={handleCloseModal}
+        />
+      )}
 
     </div>
   )

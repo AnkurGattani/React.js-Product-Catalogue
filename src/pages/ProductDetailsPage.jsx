@@ -24,7 +24,7 @@ const ProductDetails = () => {
       {/* Back Button */}
       <button
         onClick={() => window.history.back()}
-        className="mb-4 bg-gray-200 text-gray-800 px-4 py-2 rounded-md shadow hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
+        className="mb-4 bg-gray-800 text-white px-4 py-2 rounded-md shadow hover:bg-gray-700"
       >
         ← Back
       </button>
