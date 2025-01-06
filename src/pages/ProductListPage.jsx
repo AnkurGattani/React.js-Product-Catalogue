@@ -18,7 +18,7 @@ function ProductListPage() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [openModal, setOpenModal] = useState(false);
 
-  // useEffect(() => {
+   useEffect(() => {
   //   fetch('https://run.mocky.io/v3/fc3d6e02-7776-4c4a-b359-38586557bc04')
   //     .then((response) => response.json())
   //     .then((data) => dispatch(setProducts(data))); // for data from API
